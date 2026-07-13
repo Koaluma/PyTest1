@@ -16,3 +16,21 @@ egg_boxes = 3
 eggs_per_box = 12
 total_eggs = eggs_per_box * egg_boxes
 print(f"We have a total of {total_eggs} eggs")
+
+#Lesson 3: Conditionals
+
+cost_per_person = 35
+total_persons =  5
+if total_persons > 4:
+    print(f"The total cost is:{(cost_per_person*total_persons)*0.95}")
+else:
+    print(f"The total cost is: {cost_per_person*total_persons}")
+
+patient = "?"
+
+if patient is "dog":
+    print("This patient is a dog")
+elif patient is "cat":
+    print("This patient is a cat")
+else:
+    print("Unknown patient")
