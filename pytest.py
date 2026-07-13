@@ -47,3 +47,18 @@ for i in range(1,11):
 
 for i in range(10,0,-1):
     print(i)
+
+#Lesson 5: lists
+
+fruits = ["apple", "cherry", "banana"]
+meats = ["beef","pork","chicken"]
+print(fruits[0])
+
+
+numbers = [67, 69, 15, 6]
+biggest = numbers[0]
+for num in numbers:
+    if num > biggest:
+        biggest = num
+print(biggest)
+    
