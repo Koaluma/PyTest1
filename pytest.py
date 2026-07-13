@@ -11,3 +11,8 @@ price = 10
 discount = 5
 total = price - discount
 print(total)
+
+egg_boxes = 3
+eggs_per_box = 12
+total_eggs = eggs_per_box * egg_boxes
+print(f"We have a total of {total_eggs} eggs")
