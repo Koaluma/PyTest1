@@ -34,3 +34,16 @@ elif patient is "cat":
     print("This patient is a cat")
 else:
     print("Unknown patient")
+
+
+#Lesson 4: loops
+
+for i in range(5):
+    print (i)
+
+print("5 multiplied from 1 to 10")
+for i in range(1,11):
+    print(f"5*{i}={i*5}")
+
+for i in range(10,0,-1):
+    print(i)
