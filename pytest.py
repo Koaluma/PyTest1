@@ -62,3 +62,20 @@ for num in numbers:
         biggest = num
 print(biggest)
     
+#Lesson 6: functions (resusable code)
+
+def reduce(a,b):
+    return a-b
+print(reduce(178,12387))
+
+def is_even(a):
+    if  a % 2 == 0:
+        return True
+    else:
+        return False
+print(is_even(5)) 
+
+def apply_discount(price, percent):
+    return price * (100 - percent) / 100
+
+print(f"final price: {apply_discount(200, 10)}")
