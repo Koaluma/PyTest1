@@ -79,3 +79,50 @@ def apply_discount(price, percent):
     return price * (100 - percent) / 100
 
 print(f"final price: {apply_discount(200, 10)}")
+
+
+#Tests
+
+def celsius_to_farenheit(c):
+    return (c*(9/5))+32
+
+print (celsius_to_farenheit(20))
+
+
+
+def count_evens(numbers):
+    evens = 0
+    for num in numbers:
+        if num % 2 == 0:
+            evens += 1
+    return evens
+
+print(count_evens([1,2,3,4,5,6]))
+
+
+def grade(score):
+        if score >= 90:
+            return "A"
+        elif score  >= 80:
+            return "B"
+        elif score >=70:
+            return "C"
+        else:
+            return "F"
+        
+scores = [95,72, 88, 51]
+for s in scores:
+    print(f"{s} -> {grade(s)}")
+
+def is_passing(score):
+    if score > 70:
+        return True
+    
+def count_passing(scores):
+    count = 0
+    if is_passing == True:
+        for score in scores: 
+            count += 1
+    return count        
+    
+print(count_passing([95,72,88,51]))
