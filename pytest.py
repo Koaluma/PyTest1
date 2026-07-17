@@ -124,3 +124,25 @@ def count_passing(scores):
             count += 1
     return count
 print(count_passing([95,72,88,51]))
+
+#Lesson 8 input while, try except
+
+import random
+
+secret = random.randint(1,100)
+count = 0
+while True:
+    count += 1
+    try:
+        guess = int(input("Your guess: "))
+    except ValueError:
+        print("That's not a number!")
+        continue
+    if secret > guess:
+        print("Higher!")
+    elif secret < guess:
+        print ("Lower!")
+    else:
+        print(f"Got it in {count} tries!")
+        break
+    
