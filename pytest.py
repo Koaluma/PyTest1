@@ -113,16 +113,14 @@ def grade(score):
 scores = [95,72, 88, 51]
 for s in scores:
     print(f"{s} -> {grade(s)}")
-
-def is_passing(score):
-    if score > 70:
-        return True
     
+def is_passing(score):
+    return score >= 70
+
 def count_passing(scores):
     count = 0
-    if is_passing == True:
-        for score in scores: 
+    for score in scores:
+        if is_passing(score) == True:
             count += 1
-    return count        
-    
+    return count
 print(count_passing([95,72,88,51]))
